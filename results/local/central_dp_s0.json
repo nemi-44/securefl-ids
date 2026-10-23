@@ -1,0 +1,40 @@
+{
+ "config": {
+  "name": "central_dp",
+  "mode": "central",
+  "seed": 0,
+  "clients": 10,
+  "alpha": 0.5,
+  "rounds": 30,
+  "z": 1.0,
+  "clip": 1.0,
+  "ratio": 0.0,
+  "out": "results/local",
+  "cliponly": false
+ },
+ "train_s": 16.180134057998657,
+ "up_mb": 0.0,
+ "down_mb": 0.0,
+ "params": 4161,
+ "epsilon": 1.214187684089669,
+ "test": {
+  "accuracy": 0.8215031822377691,
+  "precision": 0.7580699508053104,
+  "recall": 0.9925880172946263,
+  "f1": 0.8596209689744767,
+  "fpr": 0.3881081081081081,
+  "auc": 0.962624973767114,
+  "per_cat_detect": {
+   "Analysis": 0.9896602658788775,
+   "Backdoor": 0.9982847341337907,
+   "DoS": 0.9970652971386648,
+   "Exploits": 0.9981135465325188,
+   "Fuzzers": 0.952161002969317,
+   "Generic": 1.0,
+   "Normal": 0.3881081081081081,
+   "Reconnaissance": 0.9991418764302059,
+   "Shellcode": 0.9947089947089947,
+   "Worms": 1.0
+  }
+ }
+}
