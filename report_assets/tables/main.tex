@@ -1,0 +1,12 @@
+\begin{tabular}{lp{1.3cm}p{1.3cm}p{1.3cm}p{1.3cm}p{1.3cm}p{1.3cm}rr}
+\toprule
+Arm & Accuracy & Precision & Recall & F1 & FPR & AUC & Up MB & $\varepsilon$ \\
+\midrule
+Centralised MLP & 0.857\newline{\scriptsize [0.852, 0.862]} & 0.801\newline{\scriptsize [0.794, 0.809]} & 0.985\newline{\scriptsize [0.980, 0.989]} & 0.883\newline{\scriptsize [0.880, 0.887]} & 0.300\newline{\scriptsize [0.284, 0.315]} & 0.976\newline{\scriptsize [0.975, 0.977]} & 0.0 & n/a \\
+Centralised DP-SGD & 0.820\newline{\scriptsize [0.819, 0.821]} & 0.756\newline{\scriptsize [0.755, 0.758]} & 0.993\newline{\scriptsize [0.993, 0.994]} & 0.859\newline{\scriptsize [0.858, 0.860]} & 0.392\newline{\scriptsize [0.389, 0.395]} & 0.964\newline{\scriptsize [0.963, 0.964]} & 0.0 & 1.2 \\
+FedAvg & 0.835\newline{\scriptsize [0.828, 0.842]} & 0.777\newline{\scriptsize [0.767, 0.787]} & 0.983\newline{\scriptsize [0.975, 0.990]} & 0.868\newline{\scriptsize [0.864, 0.872]} & 0.346\newline{\scriptsize [0.323, 0.368]} & 0.967\newline{\scriptsize [0.965, 0.968]} & 5.0 & n/a \\
+FedAvg + DP-SGD & 0.807\newline{\scriptsize [0.799, 0.816]} & 0.747\newline{\scriptsize [0.735, 0.758]} & 0.986\newline{\scriptsize [0.977, 0.995]} & 0.849\newline{\scriptsize [0.844, 0.855]} & 0.411\newline{\scriptsize [0.384, 0.438]} & 0.935\newline{\scriptsize [0.928, 0.942]} & 5.0 & 9.3 \\
+FedAvg + top-k & 0.835\newline{\scriptsize [0.828, 0.841]} & 0.777\newline{\scriptsize [0.766, 0.788]} & 0.982\newline{\scriptsize [0.975, 0.990]} & 0.867\newline{\scriptsize [0.863, 0.872]} & 0.347\newline{\scriptsize [0.323, 0.370]} & 0.966\newline{\scriptsize [0.964, 0.968]} & 0.7 & n/a \\
+SecureFL-IDS & 0.806\newline{\scriptsize [0.798, 0.815]} & 0.746\newline{\scriptsize [0.734, 0.757]} & 0.986\newline{\scriptsize [0.977, 0.994]} & 0.849\newline{\scriptsize [0.844, 0.854]} & 0.413\newline{\scriptsize [0.387, 0.439]} & 0.934\newline{\scriptsize [0.927, 0.942]} & 0.7 & 9.3 \\
+\bottomrule
+\end{tabular}

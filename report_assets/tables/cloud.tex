@@ -1,0 +1,12 @@
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Arm & $K$ & Runs & F1 [95\% CI] & Wall s & Round s med/p95 & S3 MB & CPU \% & Mem MiB \\
+\midrule
+FedAvg & 5 & 2 & 0.868 [0.799, 0.937] & 74 & 2.35 / 4.39 & 2.54 & 32 & 86 \\
+FedAvg + top-k & 5 & 1 & 0.878 [nan, nan] & 59 & 1.66 / 3.55 & 0.45 & 34 & 86 \\
+SecureFL-IDS & 5 & 1 & 0.870 [nan, nan] & 127 & 4.13 / 6.55 & 0.45 & 35 & 86 \\
+FedAvg & 10 & 1 & 0.863 [nan, nan] & 114 & 3.63 / 5.26 & 5.07 & 17 & 68 \\
+FedAvg + top-k & 10 & 1 & 0.862 [nan, nan] & 110 & 3.66 / 5.21 & 0.90 & 17 & 68 \\
+SecureFL-IDS & 10 & 1 & 0.853 [nan, nan] & 193 & 6.19 / 8.41 & 0.90 & 18 & 70 \\
+\bottomrule
+\end{tabular}
